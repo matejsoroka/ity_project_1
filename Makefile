@@ -8,4 +8,4 @@ do: $(NAME).tex
 	ps2pdf $(NAME).ps
 
 clean:
-	rm -f $(NAME).dvi $(NAME).log $(NAME).aux $(NAME).ps $(NAME).pdf
+	rm -f $(NAME).dvi $(NAME).log $(NAME).fdb_latexmk $(NAME).fls $(NAME).fdb_out $(NAME).out $(NAME).aux $(NAME).ps $(NAME).pdf

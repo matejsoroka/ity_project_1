@@ -1,9 +1,14 @@
+
 \documentclass[czech,a4paper,10pt,twocolumn]{article}
-\usepackage[czech]{babel}
+
+% Baliky
 \usepackage[left=1.5cm,text={18cm, 25cm},top=2cm]{geometry}
-\usepackage[IL2]{fontenc}
 \usepackage[utf8]{inputenc}
-\newcommand{\myuv}[1]{\quotedblbase#1\textquotedblleft}
+\usepackage[IL2]{fontenc}
+\usepackage[czech]{babel}
+
+% Custom commands
+\newcommand{\myquotes}[1]{\quotedblbase#1\textquotedblleft}
 
 \begin{document}
 
@@ -14,16 +19,22 @@
 \maketitle
 
 \section{Hladká sazba}
+\label{sec:smooth}
 
-Hladká sazba používá jeden stupeň, druh a řez písma a je sázena na stanovenou šířku odstavce. Skládá se z odstavců, obvykle začínajících zarážkou, nejde-li o první odstavec za nadpisem. Mohou ale být sázeny i bez zarážky - rozhodující je celková grafická úprava. Odstavec končí východovou řádkou. Věty nesmějí začínat číslicí.
+Hladká sazba používá jeden stupeň, druh a řez písma\linebreak a je sázena na stanovenou šířku odstavce. Skládá se z odstavců, obvykle začínajících zarážkou, nejde-li o první odstavec za nadpisem. Mohou ale být sázeny i bez zarážky -- rozhodující je celková grafická úprava. Odstavec končí východovou řádkou. Věty nesmějí začínat číslicí.
 
 Zvýraznění barvou, podtržením, ani změnou písma se v odstavcích nepoužívá. Hladká sazba je určena především pro delší texty, jako je beletrie. Porušení konzistence sazby působí v textu rušivě a unavuje čtenářův zrak.
 
 \section{Smíšená sazba}\label{2}
+\label{sec:mixed}
 
-Smíšená sazba má o něco volnější pravidla. Klasická hladká sazba se doplňuje o další řezy písma pro zvýraznění důležitých pojmů. Existuje \myuv{pravidlo}:
+Smíšená sazba má o něco volnější pravidla. Klasická hladká sazba se doplňuje o další řezy písma pro zvýraznění důležitých pojmů. Existuje \myquotes{pravidlo}:
 
-\begin{quotation}Čím více {\ttfamily druhů}, {\bfseries{\itshape řezů}}, velikostí, barev písma a jiných efektů použijeme, tím \emph{profesionálněji} bude dokument vypadat. Čtenář tím { \tiny bude} vždy {\bfseries{\huge nadšen!}}\end{quotation}
+\begin{quotation}
+
+    Čím více {\ttfamily druhů}, {\bfseries{\itshape řezů}}, velikostí, barev písma a jiných efektů použijeme, tím \emph{profesionálněji} bude dokument vypadat. Čtenář tím {\tiny bude} vždy {\bfseries{\huge nadšen!}}
+
+\end{quotation}
 
 {\scshape Tímto pravidlem se nikdy nesmíte řídit}. Příliš časté zvýrazňování textových elementů a změny velikosti písma jsou známkou amatérismu autora a působí velmi rušivě. Dobře navržený dokument nemá obsahovat více než
 4 řezy či druhy písma. Dobře navržený dokument je decentní, ne chaotický.
@@ -33,34 +44,40 @@ Důležitým znakem správně vysázeného dokumentu je konzistence -- napříkl
 Smíšená sazba se nejčastěji používá pro sazbu vědeckých článků a technických zpráv. U delších dokumentů vědeckého či technického charakteru je zvykem vysvětlit význam různých typů zvýraznění v úvodní kapitole.
 
 \section{Další rady:}\label{3}
-\begin{itemize}
-\item Nadpis nesmí končit dvojtečkou a nesmí obsahovat odkazy na obrázky, citace, poznámky pod čarou, ...
+\label{sec:hints}
 
-\item Nadpisy, číslování a odkazy na číslované elementy musí být sázeny příkazy k tomu určenými.
+    \begin{itemize}
 
-\item Výčet ani obrázek nesmí začínat hned pod nadpisem a nesmí tvořit celou kapitolu.
+    \item Nadpis nesmí končit dvojtečkou a nesmí obsahovat odkazy na obrázky, citace, poznámky pod čarou, ...
 
-\item Poznámky pod čarou\footnote[1]{Příliš mnoho poznámek pod čarou čtenáře zbytečně rozptyluj
-e.} používejte opravdu střídmě. (Šetřete i s textem v závorkách.)
+    \item Nadpisy, číslování a odkazy na číslované elementy musí být sázeny příkazy k tomu určenými.
 
-\item Nepoužívejte velké množství malých obrázků. Zvažte, zda je nelze seskupit.
+    \item Výčet ani obrázek nesmí začínat hned pod nadpisem a nesmí tvořit celou kapitolu.
 
-\item Bezchybným pravopisem a sazbou dáváme najevo úctu ke čtenáři. Odbytý text s chybami bude čtenář právem považovat za nedůvěryhodný.
-\end{itemize}
+    \item Poznámky pod čarou\footnote[1]{Příliš mnoho poznámek pod čarou čtenáře zbytečně rozptyluj
+    e.} používejte opravdu střídmě. (Šetřete i s textem v závorkách.)
+
+    \item Nepoužívejte velké množství malých obrázků. Zvažte, zda je nelze seskupit.
+
+    \item Bezchybným pravopisem a sazbou dáváme najevo úctu ke čtenáři. Odbytý text s chybami bude čtenář právem považovat za nedůvěryhodný.
+
+    \end{itemize}
 
 \section{České odlišnosti}
+\label{sec:dif}
 
-Česká sazba se oproti okolnímu světu v některých aspektech mírně liší. Jednou z odlišností je sazba uvozovek. Uvozovky se v češtině používají převážně pro zobrazení přímé řeči, zvýraznění přezdívek a ironie. V češtině se používají uvozovky typu \myuv{9966} místo anglických {\textquotedblleft uvozovek\textquotedblright} nebo dvojitých ''uvozovek''. Lze je sázet připravenými příkazy nebo při použití UTF-8 kódování i přímo.
+Česká sazba se oproti okolnímu světu v některých aspektech mírně liší. Jednou z odlišností je sazba uvozovek. Uvozovky se v češtině používají převážně pro zobrazení přímé řeči, zvýraznění přezdívek a ironie. V češtině se používají uvozovky typu \myquotes{9966} místo anglických {\textquotedblleft uvozovek\textquotedblright} nebo dvojitých ''uvozovek''. Lze je sázet připravenými příkazy nebo při použití UTF-8 kódování i přímo.
 
 Ve smíšené sazbě se řez uvozovek řídí řezem prvního uvozovaného slova. Pokud je uvozována celá věta, sází se koncová tečka před uvozovku, pokud se uvozuje slovo nebo část věty, sází se tečka za uvozovku.
 
-Druhou odlišností je pravidlo pro sázení konců řádků. V české sazbě by řádek neměl končit osamocenou jednopísmennou předložkou nebo spojkou. Spojkou \myuv{a} končit může pouze při sazbě do šířky 25 liter. Abychom {\LaTeX}u zabránili v sázení osamocených předložek, spojujeme je s následujícím slovem \emph{nezlomitelnou mezerou}. Tu sázíme pomocí znaku {\bfseries \textasciitilde} (vlnka, tilda). Pro systematické doplnění vlnek slouží volně šiřitelný program \emph{vlna} od pana Olšáka\footnote[2]{Viz http://petr.olsak.net/ftp/olsak/vlna/}.
+Druhou odlišností je pravidlo pro sázení konců řádků. V české sazbě by řádek neměl končit osamocenou jednopísmennou předložkou nebo spojkou. Spojkou \myquotes{a} končit může pouze při sazbě do šířky 25 liter. Abychom {\LaTeX}u zabránili v sázení osamocených předložek, spojujeme je s následujícím slovem \emph{nezlomitelnou mezerou}. Tu sázíme pomocí znaku {\bfseries \textasciitilde} (vlnka, tilda). Pro systematické doplnění vlnek slouží volně šiřitelný program \emph{vlna} od pana Olšáka\footnote[2]{Viz {\ttfamily http://petr.olsak.net/ftp/olsak/vlna/}}.
 
 Balíček {\ttfamily fontenc} slouží ke korektnímu kódovaní znaků s diakritikou, aby bylo možno v textu vyhledávat a kopírovat z nej.
 
 \section{Závěr}
+\label{sec:end}
 
-Tento dokument schválně obsahuje několik typografických prohřešků. Sekce \ref{2} a \ref{3} obsahují typografické chyby. V kontextu celého textu je jistě snadno najdete. Je dobré znát možnosti {\LaTeX}u, ale je také nutné vědět, kdy je nepoužít.
+Tento dokument schválně obsahuje několik typografických prohřešků. Sekce \ref{sec:hint} a \ref{sec:dif} obsahují typografické chyby. V kontextu celého textu je jistě snadno najdete. Je dobré znát možnosti {\LaTeX}u, ale je také nutné vědět, kdy je nepoužít.
 
 
 \end{document}
