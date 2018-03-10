@@ -6,4 +6,4 @@
 
 ## Installation
 
-Makefile incuded, need to install ```texlive-full``` package
+Makefile included, need to install ```texlive-full``` package
