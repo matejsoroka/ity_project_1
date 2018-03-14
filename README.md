@@ -1,4 +1,4 @@
-# First project from curse Typography and Publishing
+# First project from curse Typography and Publishing 8.3/10
 
 ## Introduction
 
