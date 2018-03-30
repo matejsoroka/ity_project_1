@@ -1,4 +1,4 @@
-# First project from curse Typography and Publishing
+# First project from curse Typography and Publishing 8.3/10
 
 ## Introduction
 
@@ -6,4 +6,4 @@
 
 ## Installation
 
-Makefile incuded, need to install ```texlive-full``` package
+Makefile included, need to install ```texlive-full``` package
